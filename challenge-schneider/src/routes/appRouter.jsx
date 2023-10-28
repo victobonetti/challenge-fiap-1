@@ -7,6 +7,7 @@ import RotaInfo from './rotaInfo';
 import Pagina404 from '../pages/pagina404/pagina404';
 import EsqueciSenha from '../pages/paginaInicial/esqueciSenha';
 import RotaAdmin from './rotaAdmin';
+import PaginaJeremy from '../pages/paginaJeremy/PaginaJeremy';
 
 export default function AppRouter() {
     return (
@@ -18,6 +19,7 @@ export default function AppRouter() {
                 <Route path="/postagens/*" element={<RotaPostagens />} />
                 <Route path='/info/*' element={<RotaInfo />} />
                 <Route path='/admin/*' element={<RotaAdmin />} />
+                <Route path='/jeremy/' element={<PaginaJeremy />} />
                 <Route path="*" element={<Pagina404 />} />
             </Routes>
         </Router>

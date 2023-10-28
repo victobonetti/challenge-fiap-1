@@ -3,7 +3,6 @@ import { faEdit, faHeart } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import PopUp from '../../../componentes/popUp/popUp'
 
 
 export default function MeuPerfil() {
@@ -14,7 +13,6 @@ export default function MeuPerfil() {
         setUser(getUserData())
     }, [])
 
-    const [windowOpen, setWindowOpen] = useState(true)
 
     const action = () => {
         alert("Função não implementada: Editar dados de usuário.")
@@ -22,11 +20,7 @@ export default function MeuPerfil() {
 
     return (
         <div className=' w-full h-screen flex flex-col  overflow-hidden justify-center items-center'>
-            {windowOpen &&
-                <div className=' w-1/2'>
-                    <PopUp setWindowOpen={setWindowOpen} message={['Na nossa plataforma, a pontuação e o ranking mensal são utilizados para medir o engajamento e a participação ativa dos usuários.', 'A pontuação é obtida por meio de interações construtivas, compartilhamento de conhecimentos, participação em discussões e acertos nos quizzes. Quanto mais envolvimento, maior será a pontuação.', ' O ranking mensal classifica os usuários com base na pontuação acumulada durante o mês. Parabenizamos o usuário pelo seu atual 24° lugar no ranking e incentivamos a continuidade da participação ativa para alcançar uma posição ainda melhor no próximo mês.']} />
-                </div>
-            }
+           
             <div className=' mb-3 rounded-xl shadow-inner bg-neutral-200 '>
                 <div className=' w-full flex justify-center'>
 

@@ -1,14 +1,11 @@
 import PESSOAS_IMG from '/images/duotone.png'
-import FormularioDeLogin from './login'
 import logo from '/images/schneider-logo-white.png'
-import { useState } from 'react';
 import './css/login.css'
 import { Link } from 'react-router-dom';
 
 
 export default function PaginaInicial() {
 
-    const [isDialogOpen, setDialogOpen] = useState(true);
 
     return (
         <main className=" md:overflow-hidden flex flex-col h-screen text-gray-500 bg-gray-50">
@@ -27,28 +24,14 @@ export default function PaginaInicial() {
                 <div className=' w-70 md:w-1/2 p-10'>
                     <h1 className="titulo ">Bem-vindo à Rede Social Interna da Schneider.</h1>
                     <p id='copy01' className="text-justify text-xl font-thin">A SchneiderStream tem como objetivo unir funcionários em prol da sustentabilidade, compartilhando ideias e construindo um futuro sustentável coletivamente.</p>
-                    <nav className='w-3/3 my-8'>
-                        <ul className=' w-full flex justify-evenly items-center '>
-                            <Link className='' to={'/info/pitch'}><li ><button className='botaosec'>Video Pitch</button></li> </Link>
-                            <Link className='' to={'/info/sobre'}><li ><button className='botaosec'>Sobre o projeto</button></li>  </Link>
-                        </ul>
-                    </nav>
 
 
 
                 </div>
-                <div className='  w-full md:w-1/2 flex justify-center items-center h-full bg-white shadow-md rounded px-8'>
-                    <FormularioDeLogin />
+                <div className=' flex-col  w-full md:w-1/2 flex justify-center items-center h-full bg-white shadow-md rounded px-8'>
+                    <button onClick={()=> {window.location.href = "/jeremy"}} className=' h-20 w-2/3 p-2 mb-2 text-white text-3xl bg-sch-green'>Falar com Jeremy</button>
+                    <button onClick={()=> {window.location.href = "/postagens"}} className=' h-20 w-2/3 p-2 text-white text-3xl bg-sch-blue'>Teste de interface</button>
                 </div>
-                <dialog open={isDialogOpen} className=" text-xs fade-in-animation dialog shadow-2xl absolute top-20 left-16">
-                    <h1 className=' ml-2 text-sm font-bold text mt-2'>Dados para teste de usuário</h1>
-                    <p className="pdialog">Email teste de usuário: <strong>teste@email.com</strong></p>
-                    <p className="pdialog">Senha teste de usuário: <strong>teste123</strong></p>
-                    <h1 className=' ml-2 text-sm font-bold text mt-4'>Dados para teste de administrador</h1>
-                    <p className="pdialog">Email teste de administrador: <strong>admin@email.com</strong></p>
-                    <p className="pdialog">Senha teste de administrador: <strong>admin123</strong></p>
-                    <button className="botaodialog transition-all" onClick={() => setDialogOpen(false)}>OK</button>
-                </dialog>
             </div>
 
         </main >

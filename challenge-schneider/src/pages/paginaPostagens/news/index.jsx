@@ -10,12 +10,12 @@ export default function News() {
                 </div>
                 <div className=" p-4 w-full rounded-xl border shadow-inner bg-neutral-200">
                     <h2 className=' text-lg text-neutral-600 text-center mb-2 '>
-                        Convite: Innovation Summit Brasil 2023
+                        EcoStruxure Resource Advisor For Environmental, Social and Governance (ESG) - Schneider Electric
                     </h2>
                     <div>
-                        <iframe className=' w-full h-64' src="https://www.youtube.com/embed/_lctOs3xoJg" title="CONVITE ESPECIAL: Innovation Summit Brasil 2023" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                        <iframe className=' w-full h-64' src="https://www.youtube.com/embed/4kNp6iTKvf0" title="CONVITE ESPECIAL: Innovation Summit Brasil 2023" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
                     </div>
-                    <p className=' text-justify mt-2 text-xs text-neutral-600'>Regis Ataides, nosso VP de Indústria e digitalização, tem um recado para você: Nos dias 19 e 20 de junho, em Belo Horizonte, você descobrirá o que os líderes da indústria e especialistas globais têm a dizer sobre as principais tendências para o caminho da sustentabilidade e digitalização.</p>
+                    <p className=' text-justify mt-2 text-xs text-neutral-600'>Our platform allows you to collect and aggregate cross-enterprise ESG data in one place for performance management and reporting. You can also align ESG indicators to global frameworks, simplify your ESG reporting process, and document everything from comments, performance statements, and attachments for optimal auditability. </p>
                 </div>
                 {/* <div className=' w-full flex-col rounded-xl shadow-inner bg-gray-50 p-2 '>
                     <h2 className=' text-lg text-neutral-600 text-center mb-2 '>
